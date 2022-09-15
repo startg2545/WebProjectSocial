@@ -1,9 +1,10 @@
 import './app.css';
-import {useState} from React;
+import {useState,React} from 'react';
+import ThreadList from './components/ThreadList';
 
-const handleLike = () => {
-  d
-}
+
+
+
 function App() {
   return (
   
@@ -16,9 +17,10 @@ function App() {
   </div>
 
   <div className="mainFrame">
-  <div className='mainBody'>
-      CLASS
-      <button onClick={handleLike}>Like</button>
+  <div>
+      
+      <ThreadList/>
+    
   </div>
 
   </div>

@@ -1,5 +1,5 @@
-import react , {useState} from 'react';
-import Tweet from '../../../../app1/src/components/tweet';
+import React , {useState} from 'react';
+import Thread from './Thread';
 
 const ThreadList = () => {
     const [threads , setThreads] = useState([
@@ -12,7 +12,14 @@ const ThreadList = () => {
         },
         {
             title : 'Thread name #2',
-            content : 'What a bird',
+            content : `I hear the drums echoing tonight
+            But she hears only whispers of some quiet conversation
+            She's coming in, 12:30 flight
+            The moonlit wings reflect the stars that guide me towards salvation
+            I stopped an old man along the way
+            Hoping to find some old forgotten words or ancient melodies
+            He turned to me as if to say
+            "Hurry boy, it's waiting there for you"`,
             upVote : 0,
             downVote : 0,
             id :1
@@ -26,13 +33,15 @@ const ThreadList = () => {
         }   
     ]);
 
-    reuturn(
+    return(
         <div>
             {threads.map(thread =>(
-                <Tweet title={threads.title} content={tweets.content} upVote={tweets.upVote} downVote={tweets.downVote} key={tweets.id} />
+                //<thread title={threads.title} content={threads.content} upVote={threads.upVote} downVote={threads.downVote} key={threads.id} />
+                <Thread title={thread.title} content={thread.content}> </Thread>
             ))}
+            
         </div>
     )
 }
 
-export default TweetList
+export default ThreadList;
