@@ -1,0 +1,12 @@
+.frame{
+    border: solid 1px red;
+    width: 500px;
+    padding: 20px;
+    text-align: left;
+    position: static;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}
