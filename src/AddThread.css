@@ -1,0 +1,26 @@
+.frameadd{
+    border: solid 6px black;
+    width: 500px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 2px;
+
+}
+
+.inputbox1{
+    border: groove 2px gray;
+    background-color: lightgray;
+}
+
+.inputbox2{
+    border: groove 2px gray;
+    background-color: lightgray;
+    height: 100px;
+    width: 100%;
+}
+
+.firstdiv{
+    top: 68px;
+    position: fixed;
+    left: 1401px;
+}
